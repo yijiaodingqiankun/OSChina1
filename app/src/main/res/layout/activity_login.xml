@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.jiyun.dell.oschina.activity.Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_osc" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/ic_singup_mobile"
+        android:hint="手机号或邮箱"
+        android:padding="10dp"
+        android:textColorHint="@color/bai" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/ic_login_password"
+        android:hint="密码"
+        android:padding="10dp"
+        android:textColorHint="@color/bai" />
+
+    <TextView
+        android:id="@+id/tv_wjmm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:text="忘记密码?"
+        android:textColor="@color/lan" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/bai"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/bai"
+        android:textSize="25sp"
+        android:background="@drawable/bg_noll"
+        android:layout_marginTop="20dp"
+        android:text="注册" />
+</LinearLayout>

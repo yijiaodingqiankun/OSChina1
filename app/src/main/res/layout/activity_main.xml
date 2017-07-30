@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiyun.dell.oschina.activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_above="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/zonghe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/zonghe"
+            android:gravity="center_horizontal"
+            android:text="综合"
+            android:textColor="@drawable/font" />
+
+        <RadioButton
+            android:id="@+id/dongtan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/dongtan"
+            android:gravity="center_horizontal"
+            android:text="动弹"
+            android:textColor="@drawable/font" />
+
+        <ImageView
+            android:id="@+id/jiahao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/jiahao" />
+
+        <RadioButton
+            android:id="@+id/faxian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/faxian"
+            android:gravity="center_horizontal"
+            android:text="发现"
+            android:textColor="@drawable/font" />
+
+        <RadioButton
+            android:id="@+id/wode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/wode"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@drawable/font" />
+
+    </RadioGroup>
+
+</RelativeLayout>
